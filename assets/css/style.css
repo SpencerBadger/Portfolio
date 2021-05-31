@@ -1,0 +1,220 @@
+:root{
+    --bg-color: black;
+    --container-color: yellow;
+    --h-bg-color: cadetblue;
+    --h-color: black;
+    --h-fsize: 48px;
+    --font-1: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+   font-size: 62.5%;
+}
+body {
+    background-color: var(--bg-color);
+    line-height: 1.5;
+    font-size: 1.75rem;
+    
+}
+header{
+    padding: 2.5rem;
+    font-family: var(--font-1);
+    background-color: var(--h-bg-color);
+    color: var(--h-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem;
+    
+}
+header h1{
+    font-size: var(--h-fsize);
+    justify-content: center;
+    margin: 0;
+    line-height: 1;
+    padding: 5px;
+ 
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+nav a{    
+    background-color: var(--h-bg-color);
+    padding: 5px 15px;
+    font-family: var(--font-1);
+    
+}
+
+.menu-button{
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+}
+.menu-button:hover{
+    background-color: grey;
+}
+main{
+    height: auto;
+    width: auto;
+    background-color: black;
+    color: white;
+    margin: 1.5rem;
+}
+.Titles{
+    margin:auto;
+    width: 50%;
+    border: 3px solid var(--h-bg-color);
+    padding: 10px;
+    text-align: center;
+}
+.Information{
+    text-align: center;
+}
+.project-body img{
+    
+    border: 3px solid var(--h-bg-color)
+    
+}
+.project{
+    opacity: 0.5;
+}
+.project:hover{
+    opacity: 1;
+}
+figure{
+    margin:0;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;  
+    padding: 10px;
+    justify-content: space-between;    
+  }
+.justify{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;  
+    align-items: center;
+    padding: 20px 10px 10px 10px;
+    margin: 10%;
+}
+
+.project-1{
+    flex:0 0 100%;
+    justify-content: center;
+    margin:0 auto;
+    width: 400px;
+
+}
+.code-project {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: var(--heliotrope);
+    flex: 1 1 100px;   
+    padding: 8px; 
+    
+  }
+
+.project-header {
+    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+    position: relative;
+    margin: 0 0 -10rem 0rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--h-bg-color);
+    color: var(--heliotrope);
+    border: 2px solid var(--gin);
+    border-radius: 8px;
+    width: 100px;
+   
+}
+
+footer {
+    background-color: var(--h-bg-color);
+    text-align: center;
+    margin:1.5rem;    
+
+}
+
+}
+@media screen and (min-wdith:992px){
+    header, body, footer{
+        max-width:100%;
+    }/*
+.row{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }*/
+
+.box-1{
+    margin:20px 0 0 0;
+}
+.box-2{
+ margin: 0 0 0 0;
+}
+.box-3{
+margin: 0 0;
+}
+.box-4{
+margin: 0 0;
+}
+}
+@media screen and (min-width:768px) {
+  
+    footer, body, header{
+        max-width: 100%;
+    }
+ .justify{
+     margin-right: 200px;
+ }  /* 
+.row{
+        flex: 0 0 25%;
+        max-width: 33.333%;
+}*/
+.box-1{
+    margin:20px 0 0 25%;
+}
+.box-2{
+ margin: 55px 0 0 25%;
+}
+.box-3{
+margin: 30px 0 0 25%
+}
+.box-4{
+margin: 5px 45px 0 25%;
+}
+}
+
+@media screen and (max-width:767px){
+        footer, body, header{
+            max-width: 100%;
+        }
+        .justify{
+            flex:0 0 25%;
+            max-width: 25%;
+            margin: 80px 0 10% 225px;
+        }
+        .row{
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+        
+    .box-1{
+        margin:20px 0 20px 50%;
+    }
+    .box-2{
+     margin: 50px 0 20px 50%;
+    }
+    .box-3{
+    margin: 30px 0 20px 50%;
+    }
+    .box-4{
+    margin: 5px 45px 0 50%;
+    }
+}
