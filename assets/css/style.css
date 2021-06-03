@@ -1,6 +1,5 @@
 :root{
     --bg-color: black;
-    --container-color: yellow;
     --h-bg-color: cadetblue;
     --h-color: black;
     --h-fsize: 48px;
@@ -13,7 +12,7 @@ body {
     background-color: var(--bg-color);
     line-height: 1.5;
     font-size: 1.75rem;
-    
+    height: 100vh;
 }
 header{
     padding: 2.5rem;
@@ -53,6 +52,7 @@ nav a{
     border-radius: 8px;
     background-color: black;
     color: white;
+    width:100px;
 }
 .menu-button:hover{
     background-color: grey;
@@ -64,6 +64,36 @@ main{
     color: white;
     margin: 1.5rem;
 }
+.Information{
+    text-align: center;
+}
+.gridAbout {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 350px 150px;
+    grid-gap: 15px;
+    width: auto;
+    border: 1px solid var(--h-bg-color);
+    justify-content: center;
+    margin: 60px 0 60px 0;
+    padding: 40px;
+}
+.gridAbout img{
+    width:325px;
+    height:350px;
+}
+.gridAboutOne{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    margin:auto;
+    align-self: center, stretch;
+}
+.gridAboutOne p{
+    grid-row-start: 3;
+    grid-column-start: 5;
+    text-align: left;
+}
 .Titles{
     margin:auto;
     width: 50%;
@@ -71,68 +101,163 @@ main{
     padding: 10px;
     text-align: center;
 }
-.Information{
+.grid {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 350px 150px 150px 150px;
+    grid-gap: 15px;
+    width: auto;
+    border: 1px solid var(--h-bg-color);
+    justify-content: center;
+    margin: 60px 0 60px 0;
+    padding: 40px;
+}
+.grid-item-1{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    margin:auto;
+    align-self: center, stretch;
+    
+   }
+.grid-item-1 img{
+    width:300px;
+    height:350px;
+}
+.highLightOne .grid-head-one{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    z-index: 1;
+    margin: 0 0 0 0;
+    background-color: var(--h-bg-color);
+    height: 60px;
+    width: 80px;
+}
+.grid-item-2 img, .grid-item-3 img, .grid-item-4 img, .grid-item-5 img{
+width: 150px;
+height: 150px;
+border: 2px solid var(--h-bg-color)
+}
+.grid-item-2{
+    grid-row:3;
+    grid-column:3;
+}
+.grid-head-two{
+    grid-row:3;
+    grid-column:3;
+    z-index: 1;
+    margin: 130px 0 0 0;
+    background-color: var(--h-bg-color);
+    width: 100%;
     text-align: center;
 }
-.project-body img{
-    
-    border: 3px solid var(--h-bg-color)
-    
+.grid-item-3{
+    grid-row: 3;
+    grid-column: 4;
 }
-.project{
-    opacity: 0.5;
-}
-.project:hover{
-    opacity: 1;
-}
-figure{
-    margin:0;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;  
-    padding: 10px;
-    justify-content: space-between;    
-  }
-.justify{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;  
-    align-items: center;
-    padding: 20px 10px 10px 10px;
-    margin: 10%;
-}
-
-.project-1{
-    flex:0 0 100%;
-    justify-content: center;
-    margin:0 auto;
-    width: 400px;
-
-}
-.code-project {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    color: var(--heliotrope);
-    flex: 1 1 100px;   
-    padding: 8px; 
-    
-  }
-
-.project-header {
-    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
-    position: relative;
-    margin: 0 0 -10rem 0rem;
-    padding: 0.5rem 1rem;
+.grid-head-three{
+    grid-row:3;
+    grid-column:4;
+    z-index: 1;
+    margin: 130px 0 0 0;
     background-color: var(--h-bg-color);
-    color: var(--heliotrope);
-    border: 2px solid var(--gin);
-    border-radius: 8px;
-    width: 100px;
-   
+    width: 100%;
+    text-align: center;
+}
+.grid-item-4{
+    grid-row: 4;
+    grid-column: 3;
+}
+.grid-head-four{
+    grid-row:4;
+    grid-column:3;
+    z-index: 1;
+    margin: 130px 0 0 0;
+    background-color: var(--h-bg-color);
+    width: 100%;
+    text-align: center;
+}
+.grid-item-5{
+     grid-row: 4;
+     grid-column:4;
+   }
+.grid-head-five{
+    grid-row:4;
+    grid-column:4;
+    z-index: 1;
+    margin: 130px 0 0 0;
+    background-color: var(--h-bg-color);
+    width: 100%;
+    text-align: center;
+}
+.highLightOne{
+    opacity:0.5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    margin:auto;
+    align-self: center, stretch;
+    
+}
+.highLightOne:hover{
+    opacity:1;
+}
+.gridResume{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-gap: 15px;
+    width: auto;
+    border: 1px solid var(--h-bg-color);
+    justify-content: center;
+    margin: 60px 0 60px 0;
+    padding: 40px;
+}
+.gridResume p{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+}
+.gridResume h2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    align-self: center;
+    text-align: center;
+}
+.gridBadgeOne{
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+.gridBadgeTwo{
+    grid-column-start:4;
+    grid-row-start: 4;
+}
+.gridBadgeThree{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+.gridBadgeFour{
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+.gridContact {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px;
+    grid-gap: 15px;
+    width: auto;
+    border: 1px solid var(--h-bg-color);
+    justify-content: center;
+    margin: 60px 0 60px 0;
+    padding: 40px;
+}
+.gridCOne{
+    grid-column-start: 3;
+    grid-column-end:5;
+    grid-row-start: 1;
+    align-self: center;
+    align-content: center;
 }
 
 footer {
@@ -141,80 +266,9 @@ footer {
     margin:1.5rem;    
 
 }
-
+@media (max-width:500px){
+.grid, .gridResume, .gridAbout, .gridContact{
+    border-right: 0px;
+    border-left: 0px;
 }
-@media screen and (min-wdith:992px){
-    header, body, footer{
-        max-width:100%;
-    }/*
-.row{
-        flex: 0 0 25%;
-        max-width: 25%;
-    }*/
-
-.box-1{
-    margin:20px 0 0 0;
-}
-.box-2{
- margin: 0 0 0 0;
-}
-.box-3{
-margin: 0 0;
-}
-.box-4{
-margin: 0 0;
-}
-}
-@media screen and (min-width:768px) {
-  
-    footer, body, header{
-        max-width: 100%;
-    }
- .justify{
-     margin-right: 200px;
- }  /* 
-.row{
-        flex: 0 0 25%;
-        max-width: 33.333%;
-}*/
-.box-1{
-    margin:20px 0 0 25%;
-}
-.box-2{
- margin: 55px 0 0 25%;
-}
-.box-3{
-margin: 30px 0 0 25%
-}
-.box-4{
-margin: 5px 45px 0 25%;
-}
-}
-
-@media screen and (max-width:767px){
-        footer, body, header{
-            max-width: 100%;
-        }
-        .justify{
-            flex:0 0 25%;
-            max-width: 25%;
-            margin: 80px 0 10% 225px;
-        }
-        .row{
-            flex: 0 0 25%;
-            max-width: 25%;
-        }
-        
-    .box-1{
-        margin:20px 0 20px 50%;
-    }
-    .box-2{
-     margin: 50px 0 20px 50%;
-    }
-    .box-3{
-    margin: 30px 0 20px 50%;
-    }
-    .box-4{
-    margin: 5px 45px 0 50%;
-    }
 }
