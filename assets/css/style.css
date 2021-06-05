@@ -124,19 +124,27 @@ main{
     width:300px;
     height:350px;
 }
-.highLightOne .grid-head-one{
+#highLightOne{
+    position:relative;
+}
+#highLightOne .grid-head-one{
     grid-column-start: 3;
     grid-row-start: 1;
     z-index: 1;
     margin: 0 0 0 0;
     background-color: var(--h-bg-color);
-    height: 60px;
+    height: 65px;
     width: 80px;
 }
 .grid-item-2 img, .grid-item-3 img, .grid-item-4 img, .grid-item-5 img{
 width: 150px;
 height: 150px;
 border: 2px solid var(--h-bg-color)
+}
+.grid-head-one{
+    position:absolute;
+    bottom: 0;
+    left: 0;
 }
 .grid-item-2{
     grid-row:3;
@@ -190,7 +198,10 @@ border: 2px solid var(--h-bg-color)
     width: 100%;
     text-align: center;
 }
-.highLightOne{
+#titleOne{
+    width:100%;
+}
+#highLightOne{
     opacity:0.5;
     grid-column-start: 3;
     grid-column-end: 5;
@@ -199,7 +210,7 @@ border: 2px solid var(--h-bg-color)
     align-self: center, stretch;
     
 }
-.highLightOne:hover{
+#highLightOne:hover{
     opacity:1;
 }
 .gridResume{

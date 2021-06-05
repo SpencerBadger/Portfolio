@@ -1,4 +1,4 @@
-# Horiseon Social Solutions Services - Landing Page Website
+# Spencer Badger - Portfolio Website
 
 <h2 style="text-align:center"> Table of Contents </h2>
 
@@ -18,11 +18,7 @@ This is a single page website.
 I built this website as a way to practice my html/css skills. 
 It was a way for me to design, code and deploy a single page application whilst reinforcing the basic skill set of any Full Stack programmer.
 
-The site can be used as an example of semantic html coding as well as pruning unneccesary css. 
-
-As a result of this work I have learnt and refined the basics for website design using html and css.
-
-<img src="./assets/images/Full-Website-Screenshot.png" alt="Screenshot of Landing Page." />
+As a result of this work I have learnt and refined the basics for website design using html and css in particular Flexbox/Grid/Media Queries.
 
 ## <h2 style="text-align:center" id="features">Features</h2>
 This site has been created keeping accessability standards in mind.
@@ -31,7 +27,7 @@ I have included five images all include alt text as part of the accessability st
 The title was updated to correctly reflect the organisations name.
 
 ## <h2 style="text-align:center" id="installation">Installation</h2> 
-This project can be viewed at [Horiseon Social Solution Services Website](https://dawildbadger.github.io/Horiseon-Social-Solution-Services/)
+This project can be viewed at [Spencer Badger Portfolio](https://spencerbadger.github.io/Portfolio/)
 
 As this is a single landing page website no installation is required. However you can download the html and assets and run in your preferred web browser.
 
