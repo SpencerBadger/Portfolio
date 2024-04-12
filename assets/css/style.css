@@ -150,30 +150,62 @@ button {
 
 /* Media Query */
 @media only screen and (max-width: 470px) {
-.profileSection{
-    flex:50%;
-    flex-wrap: wrap;
+    /* Generic Stlying Div Start*/
+.pageWrapper{
+    height:auto;
 }
-.profilePhoto{
-    height: 200px;
-    width: 200px;
-    flex:1;
-}
-.tagLine{
-    font-size: 10px;
-    height: auto;
-    flex:0;
+.nav_ul{
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 .mainPage{
-    max-height: 60vh;
+    min-height: 60vh;
 }
 .contactMe{
     flex: 0 0 100%;
 }
 .project{
+    align-items: center;
+    flex-grow: 1;
+}
+.nav_il{
+    align-self: center;
+    width:100%;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width:100%;
     justify-content: center;
+    gap: 10px;
 }
-.nav_ul{
-    justify-content: space-evenly;
+.BSS_Copyright{
+    font-size: 10px;
+    align-content: center;
 }
+/* Generic Styling Div End */
+
+/* Index Page Styling Start */
+.profileSection{
+    flex:50%;
+    flex-wrap: wrap;
+}
+.profilePhoto{
+    height: 100%;
+    width: 100%;
+    flex:1;
+    border-radius: 0 0;
+}
+.tagLine_Div{
+    justify-content: center;
+    height: 50%;
+}
+.tagLine{
+    font-size: 10px;
+    
+    flex:0;
+}
+/* Index Page Styling End */
+
+
 }
