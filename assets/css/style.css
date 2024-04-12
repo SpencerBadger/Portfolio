@@ -36,7 +36,6 @@ body > *{
     order: 1;
     width: 100%;
     margin-top: 10px;
-   
 }
 .nav_ul li{
     padding-right: 15px;
@@ -55,7 +54,6 @@ body > *{
     text-transform: uppercase;
     text-align: center;
     border-radius:5px;
-    
 }
 .nav_il:hover{
     color:black;
@@ -148,6 +146,7 @@ button {
 .nav_ul{
     justify-content: space-evenly;
     flex-direction: column;
+    margin: 0 0 10px 0;
 }
 .mainPage{
     min-height: 60vh;
@@ -162,6 +161,8 @@ button {
 .nav_il{
     align-self: center;
     width:100%;
+    display:inline;
+    text-align: center;
 }
 .footer{
     position: absolute;
@@ -174,12 +175,19 @@ button {
     font-size: 10px;
     align-content: center;
 }
+.contactMe{
+    order:2;
+    margin: 0 0 20px;
+}
+
 /* Responsive Generic Styling Div End */
 
 /* Responsive Index Page Styling Start */
 .profileSection{
     flex:50%;
     flex-wrap: wrap;
+    border-radius: 0;
+    margin: 0 0 20px 25%;
 }
 .profilePhoto{
     height: 100%;
@@ -199,3 +207,71 @@ button {
 /* Responsive Index Page Styling End */
 
 }
+@media only screen and (min-width: 471px) and (max-width:1000px){
+    /* Responsive Generic Stlying Div Start*/
+    .pageWrapper{
+        height:auto;
+    }
+    .nav_ul{
+        justify-content: space-evenly;
+        margin: 0 0 10px 0;
+    }
+    .mainPage{
+        min-height: 60vh;
+    }
+    .contactMe{
+        flex: 0 0 100%;
+    }
+    .project{
+        align-items: center;
+        flex-grow: 1;
+    }
+    .nav_il{
+        align-self: center;
+        width:100%;
+        display:inline;
+        text-align: center;
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+        width:100%;
+        justify-content: center;
+        gap: 10px;
+    }
+    .BSS_Copyright{
+        font-size: 10px;
+        align-content: center;
+    }
+    .contactMe{
+        order:2;
+        margin: 0 0 20px;
+    }
+    
+    /* Responsive Generic Styling Div End */
+    
+    /* Responsive Index Page Styling Start */
+    .profileSection{
+        flex:50%;
+        flex-wrap: wrap;
+        border-radius: 0;
+        margin: 0 0 20px 25%;
+    }
+    .profilePhoto{
+        height: 100%;
+        width: 100%;
+        flex:1;
+        border-radius: 0 0;
+    }
+    .tagLine_Div{
+        justify-content: center;
+        height: 50%;
+    }
+    .tagLine{
+        font-size: 10px;
+        
+        flex:0;
+    }
+    /* Responsive Index Page Styling End */
+    
+    }
