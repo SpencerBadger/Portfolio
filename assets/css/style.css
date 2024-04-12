@@ -11,11 +11,10 @@
 
 /* Default Reset Ends */
 
+/* Generic Full Page HTML Begins */
 body > *{
     font: 16px/1.5 'Poppins', sans-serif;;
 }
-
-/* Page Nav Begins */
 .pageWrapper{
     background: #f2f2f2;
     display: flex;
@@ -42,13 +41,11 @@ body > *{
 .nav_ul li{
     padding-right: 15px;
 }    
-  
 .nav_il{
     display: inline-flex;
     border: 1px solid;
     border-radius:5px;
     padding: 5px;
-    /* box-shadow: 2px 5px; */
     box-shadow: 2px 5px rgb(105, 35, 105);
     margin: 0.5em;
     flex-wrap: wrap;
@@ -61,12 +58,10 @@ body > *{
     
 }
 .nav_il:hover{
-    /* background-color: rgb(219, 119, 219); */
     color:black;
     border-radius:5px;
     box-shadow: 2px 5px;
 }
-
 button {
     background: none;
     outline: none;
@@ -88,9 +83,24 @@ button {
     padding: 10px;
     flex-basis: 50%;
 }
-/* Nav Bar Ends */
+.footer{
+    background: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 0 0; 
+}
+.footer > ul {
+    display:flex;
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+}
+.footerUl>*{
+    text-decoration: none;
+    display:inline-flex;
+}
+/* Generic Full Page HTML Ends */
 
-/* Main Content Body Begins */
+/* Index Full Page Begins */
 .mainPage{
     display: flex;
     flex-grow: 1;
@@ -119,7 +129,6 @@ button {
     width: 100%;
    
 }
-/* Main Content Body Ends */
 .profilePhoto{
     display:block;
     margin-left: auto;
@@ -128,29 +137,11 @@ button {
     border-radius: 30px 30px 30px 0px;
     background-color: black;
 }
-
-/* Footer of Document */
-.footer{
-    background: #f2f2f2;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0 0 0;
-    
-}
-.footer > ul {
-    display:flex;
-    font-size: 1rem;
-    margin: 0 0 5px 0;
-}
-.footerUl>*{
-    text-decoration: none;
-    display:inline-flex;
-}
-/* End of Document Footer */
+/* Index Full Page Ends */
 
 /* Media Query */
 @media only screen and (max-width: 470px) {
-    /* Generic Stlying Div Start*/
+/* Responsive Generic Stlying Div Start*/
 .pageWrapper{
     height:auto;
 }
@@ -183,9 +174,9 @@ button {
     font-size: 10px;
     align-content: center;
 }
-/* Generic Styling Div End */
+/* Responsive Generic Styling Div End */
 
-/* Index Page Styling Start */
+/* Responsive Index Page Styling Start */
 .profileSection{
     flex:50%;
     flex-wrap: wrap;
@@ -205,7 +196,6 @@ button {
     
     flex:0;
 }
-/* Index Page Styling End */
-
+/* Responsive Index Page Styling End */
 
 }
