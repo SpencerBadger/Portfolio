@@ -25,6 +25,7 @@ body > *{
 
 .pageHeader >*{
     padding: 20px;
+    border-bottom: 1px solid black;
 }
 #navbar{
     display: flex;
@@ -89,7 +90,7 @@ button {
     justify-content: space-around;
     padding: 10px 0 0 0; 
     margin-top: auto;
-
+    border-top: 1px solid black;;
 }
 .footer > ul {
     display:flex;
@@ -155,7 +156,12 @@ button {
     flex-direction: column;
     width: 80%;
     margin: auto;
+    margin-bottom: 10px;
     gap:10px;
+    
+}
+.blogPost{
+    background: rgb(218, 214, 214);
 }
 .blog>h1{
     text-align: center;
@@ -166,12 +172,20 @@ button {
     align-content: center;
     justify-content: space-evenly;
     gap:10px;
+    background: #f2f2f2;
 }
 #blogImage{
     max-height: 100%;
     max-width:100%;
 }
 /* Blog Full Page Ends */
+
+/* Contact Me Begins*/
+.contactDiv{
+    text-align: center;
+    text-transform: uppercase;
+}
+/* Contact Page Ends */
 
 /* About Full Page Starts */
 .aboutMain{
@@ -182,7 +196,9 @@ button {
     width: 100%;
     height: 100%;
     text-decoration: none;
-
+}
+.about > h1{
+    text-align: center;
 }
 .about{
     border: 1px solid black;
@@ -197,6 +213,8 @@ button {
 .video{
     align-content: center;
     justify-content: center;
+    max-width:420px; 
+    max-height: 340px;
 }
 .aboutQualifications{
     display: inline-flex;
@@ -220,12 +238,12 @@ button {
     flex-direction: column;
     height: 100%;
 }
+
 .projects{
     display: flex;
-    justify-content: center;
-    align-content: center;
+    background: #f2f2f2;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin: auto;
     gap:10px;
 }
@@ -237,20 +255,29 @@ button {
     display:flex;
     align-content: center;
     justify-content: space-evenly;
-    gap:20px;
-    margin: auto;
+    width: 80%;
+    
 }
 .projectsTile{
     display:flex;
     align-content: center;
     flex-direction: column;
-    object-fit: cover;
+    width:80%;
+    margin: auto;
     border: 1px black solid;
     gap:10px;
+}
+.projectTitle{
+    text-align: center;
+}
+.projectimg{
+    display: flex;
+    justify-content: center;
 }
 .projectimg > img{
     height: auto;
     max-width: 100%;
+    
 }
 .projectLink{
     display:flex;
@@ -329,6 +356,22 @@ button {
 }
 /* Responsive Index Page Styling End */
 
+/* Responsive About Me Begins */
+.aboutQualifications{
+        display: flex;
+        flex: 50%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: auto;
+        align-content: center;
+        margin: 5px;
+        list-style-type: none;
+    }
+.aboutQualifications > li{
+        padding: 10px;
+        flex: 50%;
+    }
+/* Responsive About Me Ends */
 }
 @media only screen and (min-width: 471px) and (max-width:1000px){
     /* Responsive Generic Stlying Div Start*/
@@ -400,4 +443,19 @@ button {
     }
     /* Responsive Index Page Styling End */
     
+    /* Responsive About Me Begins */
+    .aboutQualifications{
+        display: flex;
+        flex: 50%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: auto;
+        align-content: center;
+        margin: 5px;
+        list-style-type: none;
+    }
+    .aboutQualifications > li{
+        padding: 10px;
+        flex: 50%;
+    }
     }
